@@ -7,12 +7,14 @@ import kotlin.js.Promise
 /**
  * A class that represents a particular dimension (e.g., The
  * End) within a world.
+ * @since 1.0.0
  */
 open external class Dimension {
     /**
      * Identifier of the dimension.
      * @throws Error
      * This property can throw when used.
+     * @since 1.0.0
      */
     open val id: String
 
@@ -29,6 +31,7 @@ open external class Dimension {
      * an indicator of command results.
      * @throws Error
      * This function can throw errors.
+     * @since 1.0.0
      */
     open fun runCommandAsync(commandString: String): Promise<CommandResult>
 }

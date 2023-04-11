@@ -4,11 +4,13 @@ package minecraft.server
 
 /**
  * A class that provides system-level events and functions.
+ * @since 1.0.0
  */
 external val system: System
 
 /**
  * A class that wraps the state of a world - a set of
  * dimensions and the environment of Minecraft.
+ * @since 1.0.0
  */
 external val world: World

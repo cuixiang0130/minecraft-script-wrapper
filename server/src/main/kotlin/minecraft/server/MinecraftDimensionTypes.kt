@@ -4,6 +4,7 @@ package minecraft.server
 
 /**
  * A collection of default Minecraft dimension types.
+ * @since 1.0.0
  */
 open external class MinecraftDimensionTypes {
     companion object {
@@ -12,6 +13,7 @@ open external class MinecraftDimensionTypes {
          * Overworld, including Soul Sand Valleys and Crimson forests.
          * Nether fortresses contain exclusive resources. Mobs such as
          * Blaze, Hoglins, Piglins, and Ghasts congregate here.
+         * @since 1.0.0
          */
         val nether: String = definedExternally //"minecraft:nether"
 
@@ -20,6 +22,7 @@ open external class MinecraftDimensionTypes {
          * plains, jungles, mountains, deserts, taiga, and more. This
          * is the default starter dimension for Minecraft. Mobs such as
          * Axolotl, Cows, Creepers, and Zombies congregate here.
+         * @since 1.0.0
          */
         val overworld: String = definedExternally //"minecraft:overworld"
 
@@ -34,6 +37,7 @@ open external class MinecraftDimensionTypes {
          * found at the outermost edge of the void. You usually find
          * End barrens toward the edges of the main areas or land in
          * the End.
+         * @since 1.0.0
          */
         val theEnd: String = definedExternally //"minecraft:the_end"
     }
