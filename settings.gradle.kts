@@ -18,4 +18,7 @@ dependencyResolutionManagement {
 include(":server")
 include(":server-ui")
 
+include(":server-admin")
+include(":server-net")
+
 include(":bom")
