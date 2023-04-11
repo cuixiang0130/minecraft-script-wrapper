@@ -7,6 +7,7 @@ import kotlin.js.Promise
 /**
  * Represents the state of an entity (a mob, the player, or
  * other moving objects like minecarts) in the world.
+ * @since 1.0.0
  */
 open external class Entity {
     /**
@@ -16,6 +17,7 @@ open external class Entity {
      * this unique identifier - do not parse or interpret it.
      * @throws Error
      * This property can throw when used.
+     * @since 1.0.0
      */
     open val id: String
 
@@ -24,6 +26,7 @@ open external class Entity {
      * 'minecraft:skeleton'.
      * @throws Error
      * This property can throw when used.
+     * @since 1.0.0
      */
     open val typeId: String
 
@@ -39,6 +42,7 @@ open external class Entity {
      * command response values.
      * @throws Error
      * This function can throw errors.
+     * @since 1.0.0
      */
     open fun runCommandAsync(commandString: String): Promise<CommandResult>
 }

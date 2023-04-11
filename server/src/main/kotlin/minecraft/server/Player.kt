@@ -6,6 +6,7 @@ import kotlin.js.Promise
 
 /**
  * Represents a player within the world.
+ * @since 1.0.0
  */
 open external class Player : Entity {
     /**
@@ -15,6 +16,7 @@ open external class Player : Entity {
      * this unique identifier - do not parse or interpret it.
      * @throws Error
      * This property can throw when used.
+     * @since 1.0.0
      */
     override val id: String
 
@@ -22,6 +24,7 @@ open external class Player : Entity {
      * Name of the player.
      * @throws Error
      * This property can throw when used.
+     * @since 1.0.0
      */
     open val name: String
 
@@ -30,6 +33,7 @@ open external class Player : Entity {
      * 'minecraft:player'.
      * @throws Error
      * This property can throw when used.
+     * @since 1.0.0
      */
     override val typeId: String
 
@@ -45,6 +49,7 @@ open external class Player : Entity {
      * command response values.
      * @throws Error
      * This function can throw errors.
+     * @since 1.0.0
      */
     override fun runCommandAsync(commandString: String): Promise<CommandResult>
 }

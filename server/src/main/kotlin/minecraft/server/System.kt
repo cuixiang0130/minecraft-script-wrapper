@@ -4,6 +4,7 @@ package minecraft.server
 
 /**
  * A class that provides system-level events and functions.
+ * @since 1.0.0
  */
 open external class System {
     /**
@@ -16,6 +17,7 @@ open external class System {
      * @return
      * An opaque identifier that can be used with the `clearRun`
      * function to cancel the execution of this run.
+     * @since 1.0.0
      */
     open fun run(callback: () -> Unit): Number
 }
