@@ -6,5 +6,6 @@
 /buildSrc/build/
 
 /server/build/
+/server-ui/build/
 
 /bom/build
