@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 }
 
 include(":server")
+include(":bom")
