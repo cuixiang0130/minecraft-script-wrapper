@@ -1,6 +1,6 @@
 @file:JsModule("@minecraft/server")
 
-package server
+package minecraft.server
 
 /**
  * A collection of default Minecraft dimension types.

@@ -1,35 +1,41 @@
 @file:JsModule("@minecraft/server")
 
-package server
+package minecraft.server
 
 import kotlin.js.Promise
 
 /**
- * Represents the state of an entity (a mob, the player, or
- * other moving objects like minecarts) in the world.
+ * Represents a player within the world.
  */
-open external class Entity {
+open external class Player : Entity {
     /**
-     * Unique identifier of the entity. This identifier is intended
+     * Unique identifier of the player. This identifier is intended
      * to be consistent across loads of a world instance. No
      * meaning should be inferred from the value and structure of
      * this unique identifier - do not parse or interpret it.
      * @throws Error
      * This property can throw when used.
      */
-    open val id: String
+    override val id: String
 
     /**
-     * Unique identifier of the type of the entity - for example,
-     * 'minecraft:skeleton'.
+     * Name of the player.
      * @throws Error
      * This property can throw when used.
      */
-    open val typeId: String
+    open val name: String
+
+    /**
+     * Unique identifier of the type of the entity - for example,
+     * 'minecraft:player'.
+     * @throws Error
+     * This property can throw when used.
+     */
+    override val typeId: String
 
     /**
      * Runs a particular command asynchronously from the context of
-     * this entity. Note that there is a maximum queue of 128
+     * this entity.  Note that there is a maximum queue of 128
      * asynchronous commands that can be run in a given tick.
      * @param commandString
      * Command to run. Note that command strings should not start
@@ -40,5 +46,5 @@ open external class Entity {
      * @throws Error
      * This function can throw errors.
      */
-    open fun runCommandAsync(commandString: String): Promise<CommandResult>
+    override fun runCommandAsync(commandString: String): Promise<CommandResult>
 }

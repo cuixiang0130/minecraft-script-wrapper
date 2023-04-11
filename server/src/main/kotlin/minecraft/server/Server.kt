@@ -1,6 +1,6 @@
 @file:JsModule("@minecraft/server")
 
-package server
+package minecraft.server
 
 /**
  * A class that provides system-level events and functions.

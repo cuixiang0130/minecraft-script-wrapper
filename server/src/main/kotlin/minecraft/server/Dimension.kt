@@ -1,6 +1,6 @@
 @file:JsModule("@minecraft/server")
 
-package server
+package minecraft.server
 
 import kotlin.js.Promise
 

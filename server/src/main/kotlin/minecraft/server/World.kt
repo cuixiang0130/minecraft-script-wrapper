@@ -1,6 +1,6 @@
 @file:JsModule("@minecraft/server")
 
-package server
+package minecraft.server
 
 /**
  * A class that wraps the state of a world - a set of
