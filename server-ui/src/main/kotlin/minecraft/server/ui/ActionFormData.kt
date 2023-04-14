@@ -30,8 +30,7 @@ open external class ActionFormData {
      * dialog.
      * @param player
      * Player to show this dialog to.
-     * @throws Error
-     * This function can throw errors.
+     * @throws Error This function can throw errors.
      */
     open fun show(player: Player): Promise<ActionFormResponse>
 
