@@ -17,8 +17,7 @@ open external class World {
      * @param dimensionId
      * @return
      * The requested dimension
-     * @throws Error
-     * Throws if the given dimension name is invalid
+     * @throws Error Throws if the given dimension name is invalid
      * @since 1.0.0
      */
     open fun getDimension(dimensionId: String): Dimension

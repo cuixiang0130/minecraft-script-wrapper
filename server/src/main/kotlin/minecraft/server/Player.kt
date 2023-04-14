@@ -14,16 +14,14 @@ open external class Player : Entity {
      * to be consistent across loads of a world instance. No
      * meaning should be inferred from the value and structure of
      * this unique identifier - do not parse or interpret it.
-     * @throws Error
-     * This property can throw when used.
+     * @throws Error This property can throw when used.
      * @since 1.0.0
      */
     override val id: String
 
     /**
      * Name of the player.
-     * @throws Error
-     * This property can throw when used.
+     * @throws Error This property can throw when used.
      * @since 1.0.0
      */
     open val name: String
@@ -31,8 +29,7 @@ open external class Player : Entity {
     /**
      * Unique identifier of the type of the entity - for example,
      * 'minecraft:player'.
-     * @throws Error
-     * This property can throw when used.
+     * @throws Error This property can throw when used.
      * @since 1.0.0
      */
     override val typeId: String
@@ -47,8 +44,7 @@ open external class Player : Entity {
      * @return
      * For commands that return data, returns a JSON structure with
      * command response values.
-     * @throws Error
-     * This function can throw errors.
+     * @throws Error This function can throw errors.
      * @since 1.0.0
      */
     override fun runCommandAsync(commandString: String): Promise<CommandResult>

@@ -12,8 +12,7 @@ import kotlin.js.Promise
 open external class Dimension {
     /**
      * Identifier of the dimension.
-     * @throws Error
-     * This property can throw when used.
+     * @throws Error This property can throw when used.
      * @since 1.0.0
      */
     open val id: String
@@ -29,8 +28,7 @@ open external class Dimension {
      * @return
      * For commands that return data, returns a CommandResult with
      * an indicator of command results.
-     * @throws Error
-     * This function can throw errors.
+     * @throws Error This function can throw errors.
      * @since 1.0.0
      */
     open fun runCommandAsync(commandString: String): Promise<CommandResult>

@@ -15,8 +15,7 @@ open external class Entity {
      * to be consistent across loads of a world instance. No
      * meaning should be inferred from the value and structure of
      * this unique identifier - do not parse or interpret it.
-     * @throws Error
-     * This property can throw when used.
+     * @throws Error This property can throw when used.
      * @since 1.0.0
      */
     open val id: String
@@ -24,8 +23,7 @@ open external class Entity {
     /**
      * Unique identifier of the type of the entity - for example,
      * 'minecraft:skeleton'.
-     * @throws Error
-     * This property can throw when used.
+     * @throws Error This property can throw when used.
      * @since 1.0.0
      */
     open val typeId: String
@@ -40,8 +38,7 @@ open external class Entity {
      * @return
      * For commands that return data, returns a JSON structure with
      * command response values.
-     * @throws Error
-     * This function can throw errors.
+     * @throws Error This function can throw errors.
      * @since 1.0.0
      */
     open fun runCommandAsync(commandString: String): Promise<CommandResult>
